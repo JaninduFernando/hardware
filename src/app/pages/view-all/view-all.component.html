@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table border">
+        <tr class="border text-center bg-black text-white">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+        <tr class="border text-center" *ngFor="let student of studentList;">
+            <td>{{hardware.name}}</td>
+            <td>{{hardware.rentalPerDay+" "+hardware.finePerDay}}</td>
+            <td>{{hardware.finePerDay}}</td>
+            <td>{{hardware.availability}}
+            </td>
+            
+            <td><button class="btn btn-danger" (click)="deleteStudent(hardware.itemId)">delete</button></td>
+        </tr>
+    </table>
+  </div>
