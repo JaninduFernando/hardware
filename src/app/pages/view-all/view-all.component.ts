@@ -3,12 +3,13 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import Swal from 'sweetalert2';
+import { CommonnavComponent } from '../../app/commonnav/commonnav.component';
 
 
 @Component({
   selector: 'app-view-all',
   standalone: true,
-  imports: [HttpClientModule,FormsModule,CommonModule],
+  imports: [HttpClientModule,FormsModule,CommonModule,CommonnavComponent],
   templateUrl: './view-all.component.html',
   styleUrl: './view-all.component.css'
 })

@@ -1,3 +1,5 @@
+<app-commonnav></app-commonnav>
+
 <div class="container">
     <table class="table border">
         <tr class="border text-center bg-black text-white">
@@ -8,14 +10,14 @@
             <th>Update</th>
             <th>Delete</th>
         </tr>
-        <tr class="border text-center" *ngFor="let student of studentList;">
+        <tr class="border text-center" *ngFor="let hardware of hardwareList;">
             <td>{{hardware.name}}</td>
             <td>{{hardware.rentalPerDay+" "+hardware.finePerDay}}</td>
             <td>{{hardware.finePerDay}}</td>
             <td>{{hardware.availability}}
             </td>
             
-            <td><button class="btn btn-danger" (click)="deleteStudent(hardware.itemId)">delete</button></td>
+            <td><button class="btn btn-danger" (click)="deletehardware(hardware.itemId)">delete</button></td>
         </tr>
     </table>
   </div>

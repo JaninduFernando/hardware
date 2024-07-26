@@ -2,12 +2,13 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import Swal from 'sweetalert2';
+import { CommonnavComponent } from '../../app/commonnav/commonnav.component';
 
 
 @Component({
   selector: 'app-add-customer',
   standalone: true,
-  imports: [FormsModule,HttpClientModule],
+  imports: [FormsModule,HttpClientModule,CommonnavComponent],
   templateUrl: './add-customer.component.html',
   styleUrl: './add-customer.component.css'
 })
